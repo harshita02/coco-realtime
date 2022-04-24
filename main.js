@@ -26,11 +26,11 @@ function draw(){
         for(i = 0;i< objects.length;i++){
             document.getElementById("status").innerHTML = "Status : Object Detected";
             document.getElementById("number_of_objects").innerHTML = "Number of Objects Detected Are: "+objects.length;
-            fill(R,G,B)
+            fill("000000")
             percent = floor(objects[i].confidence * 100)
             text(objects[i].label+" "+percent + "%", objects[i].x, objects[i].y)
             nofill()
-            stroke(R,G,B)
+            stroke("000000")
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
         }
     
